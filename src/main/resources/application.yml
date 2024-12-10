@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: food_delivery
+  datasource:
+    url: jdbc:postgresql://localhost:5432/food_delivery
+    username: postgres
+    password: Admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
