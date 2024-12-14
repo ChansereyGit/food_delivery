@@ -28,6 +28,7 @@ public class User extends BaseEntity{
 
     private String email;
 
+    @Column(name = "phone_number", nullable = false)
     private String phoneNumber;
 
     private String address;
