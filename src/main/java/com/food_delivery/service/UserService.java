@@ -9,7 +9,7 @@ import java.util.List;
 public interface UserService {
 
     UserResponse create(UserRequest userRequest);
-    UserResponse findById(Long id, UserRequest userRequest);
+    UserResponse findById(Long id);
     UserResponse update(Long id, UserRequest userRequest);
     void deleteById(Long id);
     List<UserResponse> findAll();

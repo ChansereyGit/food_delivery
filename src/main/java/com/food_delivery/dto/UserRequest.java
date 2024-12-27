@@ -2,12 +2,7 @@ package com.food_delivery.dto;
 
 import com.food_delivery.enumuration.UserType;
 import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import lombok.*;
-
-import java.util.Date;
 
 @Getter
 @Setter
@@ -38,17 +33,6 @@ public class UserRequest {
 
     private String status;
 
+    @Column(name = "device_info")
     private DeviceRequest deviceRequest;
-
-    @Getter
-    @Setter
-    @ToString
-    public static class DeviceRequest{
-        private String deviceId;
-        private String deviceType;
-        private String deviceModel;
-        private String osVersion;
-        private String appVersion;
-        private boolean trustDevice;
-    }
 }
