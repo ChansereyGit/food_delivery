@@ -15,8 +15,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.food_delivery.Constant.SYSTEM;
-import static com.food_delivery.Constant.USER_STATUS_ACTIVE;
+import static com.food_delivery.constant.Constant.SYSTEM;
+import static com.food_delivery.constant.Constant.USER_STATUS_ACTIVE;
 
 @Service
 @Slf4j
